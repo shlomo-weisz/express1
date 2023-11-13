@@ -5,8 +5,8 @@ const fs = require('fs');
 const path = require('path');
 const userRouter = require('./routes/user');
 const logger = require('./middleware/logger');
-const { log } = require('console');
 
+app.use(express.urlencoded({ extended: true }))
 
 app.use(logger);
 app.use(express.json());
