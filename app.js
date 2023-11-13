@@ -6,7 +6,7 @@ const path = require('path');
 const userRouter = require('./routes/user');
 const logger = require('./middleware/logger');
 
-app.use(express.urlencoded({ extended: true }))
+// app.use(express.urlencoded({ extended: true }))
 
 app.use(logger);
 app.use(express.json());
